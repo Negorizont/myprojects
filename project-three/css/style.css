@@ -40,11 +40,12 @@ a{
 .header > h1{
 	font-family: 'Playfair Display', serif;
 	font-size: 70px;
+	margin-bottom: 10px;
 }
 .header p{
 	color: #999999;
 	font-size: 16px;
-	margin-top: 30px;	
+	line-height: 28px;	
 }
 .header-content{
 	width: 100%;
@@ -56,6 +57,7 @@ a{
 }
 .header-content h2{
 	font-family: 'Playfair Display', serif;
+	text-align: left;
 }
 .header-content .review{
 	grid-column-start: 1;
@@ -85,8 +87,8 @@ a{
 	position: absolute;
 	top: 0;
 	left: -18px;	
-	width: 36px;
-	height: 29px;
+	width: 25%;
+    height: 25%;
 	z-index: -1;
 }
 .header-content .p-first{
@@ -133,12 +135,14 @@ a{
 	position: absolute;
     left: 24px; 
     bottom: 32px;
+    width: 12.8%;
 }
 .video-preview1 input[type="image"],
 .video-preview2 input[type="image"]{
 	position: absolute;
     left: -10px; 
     bottom: -15px;
+    width: 25.5%;
 }
 .header-content video{
 	visibility: hidden;
@@ -190,6 +194,9 @@ a{
 	justify-content: space-between;
 	align-items: center;
 }
+.blog img {
+    width: 50%;
+}
 .blog h3{
 	font-family: "Playfair Display";
 	font-size: 40px;
@@ -214,7 +221,7 @@ a{
 }
 .blog-content {
 	text-align: left;
-    width: 450px;
+    width: 43%;
     height: 258px;
 }
 .blog-content h3{
@@ -280,13 +287,177 @@ footer{
 }
 
 
-@media screen and (max-width: 1280px){
+@media screen and (min-width: 1280px) and (max-width: 1600px){
 	.header-content {
 	    width: 100%;
 	    position: relative;
 	    display: grid;
-	    grid-template-columns: 220px auto 438.75555555554px auto 210px;
-	    grid-template-rows: 6px 9px 14px 134px 14px 134px;
+	    grid-template-columns: 220px auto 438.75555555554px auto 220px;
+	    grid-template-rows: 6px 36px 14px 120px 14px 120px;
 	}
-	/*HEIGHT=310,04444444439*/
+	.header p{
+		margin: 0;
+	}
+	.header-content p{
+		line-height: normal;
+	}
+	.header-content p span {
+    	padding-bottom: 8px;
+	}
+	.main-container {
+    	width: 70%;
+	}
+	.instractors img{
+		width: 100%;
+	}
+	.instractors {
+	    grid-template-columns: 250px 250px 250px;
+	    grid-column-gap: 95px;
+	}
+	.blog h3 {
+	    font-size: 35px;
+	}
+	.footer-content {
+		padding: 38px 0 28px;
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px){
+	.nav-menu li {
+    	margin-left: 30px;
+	}
+	.header > h1 {
+    	font-size: 50px;
+    	margin-bottom: 10px;
+	}
+	.header-content {
+	    width: 100%;
+	    position: relative;
+	    display: grid;
+	    grid-template-columns: 170px auto 351px auto 170px;
+	    grid-template-rows: 0px 28px 0px 99px 14px 99px;
+	}
+	.header p{
+		margin: 0;
+	}
+	.header-content h2 {
+	    font-size: 20px;
+	}
+	p.p-first,
+	p.p-second {
+    font-size: 14px;
+    line-height: 18px;
+	}
+	.header-content p span {
+		margin-top: 10px;
+    	padding-bottom: 0px;
+	}
+	.video-active input[type="image"] {
+	   margin-bottom: 17px;
+	}
+	.main-container {
+    	width: 70%;
+	}
+	.instractors img{
+		width: 100%;
+	}
+	.instractors {
+	    grid-template-columns: 200px 200px 200px;
+	    grid-column-gap: 50px;
+	}
+	.blogs {
+    	margin-bottom: 200px;
+	}
+	.blog h3 {
+	    font-size: 26px;
+	}
+	.blog-content {
+    	margin-top: 50px;
+	}
+	.blog-content h3{
+		margin-bottom: 15px;
+	}
+	.blog-content p{
+		margin-bottom: 20px;
+	}
+	.margin-blog {
+    	margin-bottom: 70px;
+	}
+	.footer-content {
+		padding: 20px 0 20px;
+	}
+	.left h4 {
+    	font-size: 18px;
+    	width: 80%;
+	}
+}
+/* потом доделаю
+@media screen and (min-width: 768px) and (max-width: 1024px){
+	.nav-menu li {
+    	margin-left: 30px;
+	}
+	.header > h1 {
+    	font-size: 50px;
+    	margin-bottom: 10px;
+	}
+	.header-content {
+	    width: 100%;
+	    position: relative;
+	    display: grid;
+	    grid-template-columns: 170px auto 351px auto 170px;
+	    grid-template-rows: 0px 28px 0px 99px 14px 99px;
+	}
+	.header p{
+		margin: 0;
+	}
+	.header-content h2 {
+	    font-size: 20px;
+	}
+	p.p-first,
+	p.p-second {
+    font-size: 14px;
+    line-height: 18px;
+	}
+	.header-content p span {
+		margin-top: 10px;
+    	padding-bottom: 0px;
+	}
+	.video-active input[type="image"] {
+	   margin-bottom: 17px;
+	}
+	.main-container {
+    	width: 70%;
+	}
+	.instractors img{
+		width: 100%;
+	}
+	.instractors {
+	    grid-template-columns: 200px 200px 200px;
+	    grid-column-gap: 50px;
+	}
+	.blogs {
+    	margin-bottom: 200px;
+	}
+	.blog h3 {
+	    font-size: 26px;
+	}
+	.blog-content {
+    	margin-top: 50px;
+	}
+	.blog-content h3{
+		margin-bottom: 15px;
+	}
+	.blog-content p{
+		margin-bottom: 20px;
+	}
+	.margin-blog {
+    	margin-bottom: 70px;
+	}
+	.footer-content {
+		padding: 20px 0 20px;
+	}
+	.left h4 {
+    	font-size: 18px;
+    	width: 80%;
+	}
 }
