@@ -1,0 +1,251 @@
+/*
+	font-family: 'Anton', sans-serif;
+	font-family: 'Merriweather', serif;
+	font-family: 'Playfair Display', serif;
+*/
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: 'Playfair Display', serif;
+	color: #fff;
+	background: linear-gradient(to right,#101011 50%,#161717 50%);
+}
+ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+a{
+	color: #fff;
+	text-decoration: none;
+}
+header{
+    padding-top: 5vh;
+	height: 94.4vh;
+	width: 100%;
+}
+.border{
+	border: 2px solid #988345;
+}
+nav button{
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	display: inline-block;
+	padding: 4px;
+	border-radius: 10px;
+    font-weight: 900;
+    color: #fff;
+    background: none;
+    background-color: #161717;
+    border: 2px solid #fff;
+}
+nav button:hover{
+	background-color:#666B6B;
+	cursor: pointer;
+}
+.nav-bar{
+	visibility: hidden;
+	position: fixed;
+	left: 0;
+	top: 0;
+    display: flex;
+	flex-direction: column;
+	z-index: 100;
+	width: 100%;
+	height: 100vh;
+	background-color: #101011;
+	text-transform: uppercase;
+}
+.nav-bar a{
+	font-size: 40px;
+	border-bottom: 2px solid #2F3133;
+	display: block;
+	padding: 20px;
+}
+.nav-bar a:hover{
+	border-color: #988345;
+	color: #988345;
+	transition: color 0.4s, border-color 0.4s;
+}
+.open{
+	visibility: visible;
+}
+.home{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 120px;
+}
+.home h1{
+	color: #988345;
+	font-size: 70px;
+}
+.home p{
+    font-size: 30px;
+    margin: 30px 0 240px;
+}
+.home img{
+	width: 60px;
+}
+.about{
+	height: 99.4vh;
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about h1,
+.portfolio h1,
+.contacts h1{
+	color: #988345;
+	margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    letter-spacing: 4px;
+}
+.about div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about img{
+	width: 250px;
+	border-radius: 5px;
+}
+.about div ul{
+    width: 35%;
+    list-style: square;
+}
+.about ul li{
+    margin-top: 20px;
+}
+.about > p {
+    width: 83%;
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+.about a img{
+	margin-top: 40px;
+	width: 60px;
+}
+.color{
+	color: #E4C568;
+}
+.color2{
+	color: #988345;
+}
+.about li span{
+    text-transform: uppercase;
+}
+.portfolio{
+	position: relative;
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 85%;
+	padding: 55px 0;
+	margin-bottom: 50px;
+	border: #E4C568 solid 3px;
+	border-radius: 10px;
+	color: #E4C568;
+}
+.project img{
+	width: 40%;
+}
+.project div{
+	display: flex;
+	flex-direction: column;
+    width: 40%;
+    letter-spacing: 1px;
+}
+.project h2{
+	font-size: 21px;
+	color: #988345;
+	text-align: center;
+	margin-bottom: 12px;
+}
+.project div > p{
+	margin-bottom: 10px;
+}
+.project p span{
+	margin-bottom: 10px;
+	text-decoration: underline;
+}
+.project ul {
+	color: #988345;
+	list-style: circle;
+}
+.project ul p{
+	color: #988345;
+	margin-bottom: 5px;
+}
+.project ul li{
+	margin-bottom: 3px;
+}
+.not-completed{
+	font-size: 20px;
+	margin-top: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #A60000;
+	text-decoration: underline; 
+}
+.portfolio a > img{
+	width: 60px;
+}
+.contacts{
+	width: 100%;
+	text-align: center;
+}
+.contacts h1{
+	font-size: 35px;
+}
+.contain{
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 50px;
+}
+.contacts p{
+	font-family: 'Merriweather', serif;
+	font-size: 20px;
+}
+.email{
+	display: inline-block;
+	margin-left: 30px;
+}
+.links{
+	display: flex;
+}
+.links div{
+	margin-left: 30px;
+	width: 30px;
+	height: 30px;
+}
+.contain p a:hover{
+	text-decoration: underline;
+}
+.github a:hover  path {
+	color: #BDBEC0;
+}
+.instagram a:hover  path {
+	color: #CD2E96;
+}
+.vk a:hover  path {
+	color: #5181B8;
+}
